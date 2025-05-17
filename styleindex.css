@@ -33,6 +33,7 @@
     }
     nav ul{
     list-style: none;
+    flex-wrap: nowrap;
     display: flex;
     justify-content: center;
     }
