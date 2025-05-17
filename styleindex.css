@@ -37,6 +37,9 @@
     display: flex;
     justify-content: center;
     }
+    nav li{
+        flex-wrap: nowrap;
+    }
     .infoItem{
     display: flex;
     align-items: center;
