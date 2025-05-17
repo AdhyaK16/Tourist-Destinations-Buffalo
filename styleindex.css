@@ -35,10 +35,19 @@
     list-style: none;
     flex-wrap: nowrap;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
     }
-    nav li{
-        flex-wrap: nowrap;
+    nav ul li{
+        flex-grow: 1;
+        text-align: center;
+    }
+    nav ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
     }
     .infoItem{
     display: flex;
