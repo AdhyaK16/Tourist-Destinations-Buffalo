@@ -1,2 +1,0 @@
-# Tourist-Destinations-Buffalo
-
