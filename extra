@@ -1,105 +1,9 @@
-    body{
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        background-color:rgb(168, 168, 244);
-        color:rgb(3, 3, 3);
-        margin: 8;
-        padding: 25px;
-    }
-    img{
-        height: 150px;
-        width: 150px;
-        border:2px solid #0044ff;
-        display: center;
-        margin: 4px 2px;
-    }
-    header{
-        background-color:darkorchid;
-        color:white;
-        padding: 15px 32px;
-        text-align: center;
-    }
-    .profile-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:0px;
-    }
-    footer{
-        background-color:rgb(168, 168, 244);
-        color:black;
-        padding: 1px;
-        text-align: left;
-        font-size:12px;
-    }
-    nav ul{
-    list-style: none;
-    flex-wrap: nowrap;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    }
-    nav ul li{
-        flex-grow: 1;
-        text-align: center;
-    }
-    nav ul li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    }
-    .infoItem{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
-    background-color: rgb(168, 168, 244);
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    nav ul li a{
-    color: rgb(3, 3, 3);
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-    }
-    nav ul li a:hover,
-    nav ul li a.active
-    {
-    background-color: rgba(8, 8, 8, 0.2);
-    }
-    /*-Home-*/
-    #home{
-    background-color: rgb(168, 168, 244);
-    }
-    .aboutContent{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    }
-    body {font-family: Arial, Helvetica, sans-serif;}
-
-    #myImg {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-    }
-    /*-Contact Us-*/
-    .styleContainer{
-        width: 50%;
-        float: left;
-        background: linear-gradient(rgb(197, 197, 245),rgb(181, 214, 244));
-        border-radius: 15px;
-    }
+   /*-Contact Us-*/
     .infoGrid{
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); 
         gap: 20px;
-        margin-top: 90px;
+        margin-top: 30px;
     }
     .infoItem{
         display: flex;
@@ -153,14 +57,6 @@
         font-weight: normal;
         color: #333;
     }
-    .contactText{
-        text-align: center;
-        background: linear-gradient(rgb(197, 197, 245),rgb(181, 214, 244));
-    }
-    .section-title{
-        text-align: center;
-        background: linear-gradient(rgb(197, 197, 245),rgb(181, 214, 244));
-    }
 /*-Survey in Contact page-*/
 .container{
     max-width: 600px;
@@ -169,15 +65,12 @@
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
     overflow: hidden;
-    width: 50%;
-    float: right;
 }
 .formHeader{
     background: linear-gradient(rgb(197, 197, 245),rgb(181, 214, 244));
     color: black;
     padding: 30px;
     text-align: center;
-    align-items: right;
 }
 .formHeader h1{
     font-size: 2rem;
@@ -232,9 +125,17 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+.radioItem:hover{
+    border-color: blueviolet;
+    background: rgb(232, 194, 207);
+}
 .radioItem input[type="radio"]{
     margin-right: 10px;
     transform: scale(1.2);
+}
+.radioItem.selected{
+    border-color: blueviolet;
+    background: rgb(232, 194, 207);
 }
 .checkboxGroup{
     display: flex;
@@ -250,9 +151,17 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+.checkboxItem:hover{
+    border-color: blueviolet;
+    background: rgb(232, 194, 207);
+}
 .checkboxItem input[type="checkbox"]{
     margin-right: 10px;
     transform: scale(1.2); 
+}
+.checkboxItem.selected{
+    border-color: blueviolet;
+    background: rgb(232, 194, 207);
 }
 .submitButton{
     width: 100%;
